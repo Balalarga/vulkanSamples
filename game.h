@@ -1,8 +1,8 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include "vulkancore.h"
-#include "vulkanWindow.h"
+#include "videosystem.h"
+#include "vulkanwindow.h"
 #include <memory>
 
 class Game
@@ -20,7 +20,8 @@ private:
     Game();
     static Game* selfInstance;
     bool isRunning = false;
-    std::unique_ptr<VulkanWindow> mainWindow;
+    std::unique_ptr<VideoSystem> videoSystem;
+
 
 };
 

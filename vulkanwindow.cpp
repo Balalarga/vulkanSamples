@@ -1,4 +1,4 @@
-#include "vulkanWindow.h"
+#include "vulkanwindow.h"
 
 VulkanWindow::VulkanWindow()
 {
